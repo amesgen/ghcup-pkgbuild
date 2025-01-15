@@ -10,7 +10,8 @@ depends=()
 optdepends=('curl'
             'wget'
             "ncurses5-compat-libs: using older ghc's linking against libtinfo.so.5")
-conflicts=('ghcup-git')
+provides=('ghcup-hs')
+conflicts=('ghcup-hs')
 source_x86_64=(ghcup-$pkgver-$pkgrel-x86_64::https://downloads.haskell.org/~ghcup/$pkgver/x86_64-linux-ghcup-$pkgver)
 source_aarch64=(ghcup-$pkgver-$pkgrel-aarch64::https://downloads.haskell.org/~ghcup/$pkgver/aarch64-linux-ghcup-$pkgver)
 source_armv7h=(ghcup-$pkgver-$pkgrel-armv7h::https://downloads.haskell.org/~ghcup/$pkgver/armv7-linux-ghcup-$pkgver)
